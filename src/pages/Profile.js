@@ -1,7 +1,7 @@
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const API_BASE_URL = "http://127.0.0.1:5000/api";
 
