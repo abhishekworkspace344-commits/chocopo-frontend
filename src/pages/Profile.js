@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE_URL = "http://127.0.0.1:5000/api";
+const API_BASE_URL = "https://chocopo-backend.onrender.com/api";
 
 export default function Profile() {
   const navigate = useNavigate();
