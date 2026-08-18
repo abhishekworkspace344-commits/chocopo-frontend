@@ -51,10 +51,9 @@ export default function ParentCompany() {
         <div className="about-image">
 
           <img
-            src="D:\aktechnologies\WORKPLACE\chocopo\frontend\img\WhatsApp Image 2026-08-01 at 7.50.58 PM.jpeg"
-            alt="Garden"
-          />
-
+  src="/img/WhatsApp Image 2026-08-01 at 7.50.58 PM.jpeg"
+  alt="Garden"
+/>
         </div>
 
         <div className="about-content">
