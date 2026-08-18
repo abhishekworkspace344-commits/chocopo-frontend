@@ -28,6 +28,7 @@ export default function Navbar() {
         <Link to="/menu">Our Products</Link>
         <Link to="/franchise">Franchise</Link>
         <Link to="/parent-company">Parent Company</Link>
+        <Link to="/bridal-makeup">Bridal Makeup</Link>
         <Link to="/cart" className="nav-cart-link">
           Cart
         </Link>

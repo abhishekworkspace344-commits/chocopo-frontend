@@ -222,7 +222,7 @@ export default function Franchise() {
               <span>📞</span>
               <p>
                 <strong>Call Us</strong>
-                +91 90000 00000
+                +91  8606923603
               </p>
             </div>
 
@@ -230,7 +230,7 @@ export default function Franchise() {
               <span>✉️</span>
               <p>
                 <strong>Email Us</strong>
-                franchise@chocopo.com
+                franchise.chocopo@gmail.com
               </p>
             </div>
           </div>
@@ -359,8 +359,8 @@ export default function Franchise() {
           <div className="footer-column">
             <h4>Visit Us</h4>
             <Link to="/store-locator">Store Locator</Link>
-            <a href="mailto:franchise@chocopo.com">franchise@chocopo.com</a>
-            <a href="tel:+919000000000">+91 90000 00000</a>
+            <a href="mailto:franchise.chocopo@gmail.com">franchise.chocopo@gmail.com</a>
+            <a href="tel:+91 8606923603">+91  8606923603</a>
           </div>
         </div>
 

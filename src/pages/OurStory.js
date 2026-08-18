@@ -143,8 +143,8 @@ export default function OurStory() {
             <h4>Visit Us</h4>
             <Link to="/store-locator">Store Locator</Link>
             <Link to="/franchise">Partner With Us</Link>
-            <a href="mailto:hello@chocopo.com">hello@chocopo.com</a>
-            <a href="tel:+919000000000">+91 90000 00000</a>
+            <a href="mailto:  chocopo.info@gmail.com"> chocopo.info@gmail.com</a>
+            <a href="tel:+91 8606923603">+91  8606923603</a>
           </div>
         </div>
 

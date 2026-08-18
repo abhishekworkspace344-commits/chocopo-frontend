@@ -22,6 +22,7 @@ import MyOrders from "./pages/MyOrders";
 import Profile from "./pages/Profile";
 import ParentCompany from "./pages/ParentCompany";
 import AdminCategories from "./pages/AdminCategories";
+import BridalMakeup from "./pages/BridalMakeup";
 import SupportChat from "./components/SupportChat";
 
 import "./App.css";
@@ -71,6 +72,7 @@ function App() {
         <Route path="/our-nature" element={<OurNature />} />
         <Route path="/franchise" element={<Franchise />} />
         <Route path="/parent-company" element={<ParentCompany />} />
+        <Route path="/bridal-makeup" element={<BridalMakeup />} />
         <Route path="/store-locator" element={<StoreLocator />} />
         <Route path="/my-orders" element={<MyOrders />} />
         <Route path="/profile" element={<Profile />} />
