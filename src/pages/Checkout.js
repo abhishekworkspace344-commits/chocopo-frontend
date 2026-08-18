@@ -159,7 +159,7 @@ export default function Checkout() {
       currency: paymentData.currency,
       name:     "CHOCOPO™",
       description: `Order — ₹${totalAmount}`,
-      image:    "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=80&h=80&fit=crop",
+      image:    "/img/hot-chocolate.jpg",
       order_id: paymentData.razorpay_order_id,
 
       prefill: {

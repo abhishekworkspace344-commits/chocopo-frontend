@@ -129,12 +129,11 @@ export default function Menu() {
                     {product.offers}
                   </div>
                 )}
-                <img
-                  src={product.image_url}
+                <img src={product.image_url || '/img/hot-chocolate.jpg'} onError={(e) => { e.target.onerror = null; e.target.src = '/img/hot-chocolate.jpg'; }}
                   alt={product.name}
                   onError={(event) => {
                     event.currentTarget.src =
-                      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085";
+                      "/img/hot-chocolate.jpg";
                   }}
                 />
 

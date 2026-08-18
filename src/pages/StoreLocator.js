@@ -11,7 +11,7 @@ const stores = [
     phone: "+91 90000 00001",
     hours: "10:00 AM – 10:00 PM",
     image:
-      "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85"
+      "/img/hot-chocolate.jpg"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const stores = [
     phone: "+91 90000 00002",
     hours: "10:00 AM – 10:00 PM",
     image:
-      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=85"
+      "/img/hot-chocolate.jpg"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const stores = [
     phone: "+91 90000 00003",
     hours: "10:00 AM – 10:00 PM",
     image:
-      "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=85"
+      "/img/hot-chocolate.jpg"
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const stores = [
     phone: "+91 90000 00004",
     hours: "10:00 AM – 10:00 PM",
     image:
-      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85"
+      "/img/hot-chocolate.jpg"
   }
 ];
 
@@ -112,7 +112,7 @@ export default function StoreLocator() {
         <div className="store-grid">
           {filteredStores.map((store) => (
             <article className="store-card" key={store.id}>
-              <img src={store.image} alt={store.name} />
+              <img src={store.image || '/img/hot-chocolate.jpg'} onError={(e) => { e.target.onerror = null; e.target.src = '/img/hot-chocolate.jpg'; }} alt={store.name} />
 
               <div className="store-card-content">
                 <span className="store-city-badge">{store.city}</span>

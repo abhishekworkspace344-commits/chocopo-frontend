@@ -98,7 +98,7 @@ export default function Franchise() {
       <section className="franchise-intro-section">
         <div className="franchise-intro-image">
           <img
-            src="https://images.unsplash.com/photo-1559628233-6b11b4c1e7a6?auto=format&fit=crop&w=1000&q=85"
+            src="/img/hot-chocolate.jpg"
             alt="CHOCOPO franchise cafe"
           />
         </div>

@@ -44,7 +44,7 @@ export default function OurNature() {
 
         <div className="nature-intro-image">
           <img
-            src="https://images.unsplash.com/photo-1548907040-4d42c0d19d0a?auto=format&fit=crop&w=1000&q=85"
+            src="/img/hot-chocolate.jpg"
             alt="Fresh chocolate ingredients"
           />
         </div>

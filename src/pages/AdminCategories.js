@@ -176,7 +176,7 @@ export default function AdminCategories() {
                   <input
                     type="url"
                     name="image_url"
-                    placeholder="https://images.unsplash.com/..."
+                    placeholder="/img/hot-chocolate.jpg"
                     value={formData.image_url}
                     onChange={handleChange}
                   />
@@ -187,8 +187,7 @@ export default function AdminCategories() {
               {formData.image_url && (
                 <div style={{ marginBottom: 18 }}>
                   <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 8, color: "var(--ink)" }}>Image Preview</label>
-                  <img
-                    src={formData.image_url}
+                  <img src={formData.image_url || '/img/hot-chocolate.jpg'} onError={(e) => { e.target.onerror = null; e.target.src = '/img/hot-chocolate.jpg'; }}
                     alt="preview"
                     style={{ height: 120, width: 200, objectFit: "cover", borderRadius: 12, border: "1px solid var(--rose-line)" }}
                     onError={e => e.target.style.display = "none"}
@@ -233,7 +232,7 @@ export default function AdminCategories() {
                 onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = "0 2px 12px rgba(169,99,125,0.06)"; }}
               >
                 {cat.image_url ? (
-                  <img src={cat.image_url} alt={cat.name}
+                  <img src={cat.image_url || '/img/hot-chocolate.jpg'} onError={(e) => { e.target.onerror = null; e.target.src = '/img/hot-chocolate.jpg'; }} alt={cat.name}
                     style={{ width: "100%", height: 160, objectFit: "cover", display: "block" }} />
                 ) : (
                   <div style={{ width: "100%", height: 160, background: "var(--blush)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 36 }}>

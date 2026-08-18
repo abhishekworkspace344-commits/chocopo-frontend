@@ -236,7 +236,7 @@ export default function AdminProducts() {
                 <tr key={product.id} style={{ borderBottom: "1px solid #f0f0f0" }}>
                   <td style={{ padding: "12px" }}>{product.id}</td>
                   <td style={{ padding: "12px" }}>
-                    <img src={product.image_url} alt={product.name} style={{ width: "40px", height: "40px", objectFit: "cover", borderRadius: "4px" }} />
+                    <img src={product.image_url || '/img/hot-chocolate.jpg'} onError={(e) => { e.target.onerror = null; e.target.src = '/img/hot-chocolate.jpg'; }} alt={product.name} style={{ width: "40px", height: "40px", objectFit: "cover", borderRadius: "4px" }} />
                   </td>
                   <td style={{ padding: "12px" }}>{product.name}</td>
                   <td style={{ padding: "12px" }}>{product.category_name}</td>

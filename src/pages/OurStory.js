@@ -23,7 +23,7 @@ export default function OurStory() {
       <section className="story-intro-section">
         <div className="story-image-card">
           <img
-            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1000&q=85"
+            src="/img/hot-chocolate.jpg"
             alt="Chocolate dessert preparation"
           />
         </div>

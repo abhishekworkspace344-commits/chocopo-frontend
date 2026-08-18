@@ -77,7 +77,7 @@ export default function Home() {
       <section className="home-intro-section">
         <div className="home-intro-image">
           <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=1000&q=85"
+            src="/img/hot-chocolate.jpg"
             alt="CHOCOPO chocolate dessert"
           />
         </div>
@@ -167,7 +167,7 @@ export default function Home() {
                 className="home-category-card"
                 key={category.id}
               >
-                <img src={category.image_url} alt={category.name} />
+                <img src={category.image_url || '/img/hot-chocolate.jpg'} onError={(e) => { e.target.onerror = null; e.target.src = '/img/hot-chocolate.jpg'; }} alt={category.name} />
                 <div className="category-card-overlay">
                   <h3>{category.name}</h3>
                   <span>Explore now →</span>
@@ -178,7 +178,7 @@ export default function Home() {
             <>
               <Link to="/menu" className="home-category-card">
                 <img
-                  src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=85"
+                  src="/img/hot-chocolate.jpg"
                   alt="Beverages"
                 />
                 <div className="category-card-overlay">
@@ -189,7 +189,7 @@ export default function Home() {
 
               <Link to="/menu" className="home-category-card">
                 <img
-                  src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=85"
+                  src="/img/hot-chocolate.jpg"
                   alt="Desserts"
                 />
                 <div className="category-card-overlay">
@@ -200,7 +200,7 @@ export default function Home() {
 
               <Link to="/menu" className="home-category-card">
                 <img
-                  src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85"
+                  src="/img/hot-chocolate.jpg"
                   alt="Cakes"
                 />
                 <div className="category-card-overlay">
@@ -211,7 +211,7 @@ export default function Home() {
 
               <Link to="/menu" className="home-category-card">
                 <img
-                  src="https://images.unsplash.com/photo-1621939514649-280e2aa8e570?auto=format&fit=crop&w=800&q=85"
+                  src="/img/hot-chocolate.jpg"
                   alt="Snacks"
                 />
                 <div className="category-card-overlay">
@@ -233,7 +233,7 @@ export default function Home() {
         <div className="featured-product-grid">
           {featuredProducts.map((product) => (
             <article className="featured-product-card" key={product.id}>
-              <img src={product.image_url} alt={product.name} />
+              <img src={product.image_url || '/img/hot-chocolate.jpg'} onError={(e) => { e.target.onerror = null; e.target.src = '/img/hot-chocolate.jpg'; }} alt={product.name} />
 
               <div className="featured-product-content">
                 <span>{product.category_name}</span>

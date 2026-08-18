@@ -53,7 +53,7 @@ export default function BridalMakeup() {
     <div className="franchise-page">
       <Navbar />
 
-      <section className="franchise-hero" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=85')" }}>
+      <section className="franchise-hero" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/hot-chocolate.jpg')" }}>
         <div className="franchise-hero-overlay"></div>
         <div className="franchise-hero-content">
           <p className="menu-kicker">LOOK STUNNING</p>
